@@ -1,0 +1,123 @@
+    <!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Autónomo - Dia 1</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f1f5f9;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+        h1 { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; }
+        h2 { margin-top: 40px; color: var(--dark); display: flex; align-items: center; gap: 10px; }
+        .step-number { 
+            background: var(--primary); color: white; width: 30px; height: 30px; 
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; 
+        }
+        .code-block {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Consolas', monospace;
+            border-left: 4px solid var(--primary);
+            margin: 15px 0;
+            white-space: pre-wrap;
+        }
+        .note {
+            background: #fffbeb;
+            border: 1px solid #fcd34d;
+            color: #92400e;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .checklist { margin-top: 20px; background: #f0fdf4; padding: 20px; border-radius: 8px; border: 1px solid #bbf7d0; }
+        .checklist h3 { margin-top: 0; color: #166534; }
+        .checklist label { display: block; margin-bottom: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Estudo Autónomo: Início do Portfólio</h1>
+    <p><strong>Objetivo:</strong> Configurar o ambiente de desenvolvimento e criar a estrutura inicial do teu projeto pessoal.</p>
+    <p><strong>Tempo estimado:</strong> 2h - 3h</p>
+
+    <h2><span class="step-number">1</span> Preparar as Pastas</h2>
+    <p>A organização é fundamental. Vamos criar a "casa" do teu projeto.</p>
+    <ol>
+        <li>Cria uma pasta no teu computador chamada <code>CursoFrontend</code>.</li>
+        <li>Dentro dessa pasta, cria uma nova pasta chamada <code>Portfolio</code>.</li>
+        <li>Abre o <strong>VS Code</strong>.</li>
+        <li>Vai a <strong>File > Open Folder</strong> e seleciona a pasta <code>Portfolio</code>.</li>
+    </ol>
+
+    <h2><span class="step-number">2</span> O Ficheiro Index</h2>
+    <p>Todo o site começa com um ficheiro index. Cria o teu primeiro ficheiro HTML.</p>
+    <ol>
+        <li>No VS Code, cria um novo ficheiro chamado <code>index.html</code> (tudo em minúsculas!).</li>
+        <li>No ficheiro, escreve apenas <code>!</code> e pressiona <strong>Enter</strong> ou <strong>Tab</strong>.</li>
+        <li>O VS Code vai gerar automaticamente a estrutura base do HTML5.</li>
+    </ol>
+    <div class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;</div>
+
+    <h2><span class="step-number">3</span> Personalizar o Conteúdo</h2>
+    <p>Agora, vamos adicionar o teu conteúdo inicial.</p>
+    <ol>
+        <li>Muda o texto dentro de <code>&lt;title&gt;</code> para <code>Portfólio de [Teu Nome]</code>.</li>
+        <li>Muda o atributo <code>lang="en"</code> para <code>lang="pt"</code>.</li>
+        <li>Dentro do <code>&lt;body&gt;</code>, adiciona o seguinte:
+            <ul>
+                <li>Um título <code>&lt;h1&gt;</code> com o teu nome.</li>
+                <li>Um parágrafo <code>&lt;p&gt;</code> com uma breve descrição sobre ti (ex: "Olá! Sou um estudante de Frontend...").</li>
+                <li>Um subtítulo <code>&lt;h2&gt;</code> a dizer "Meus Objetivos".</li>
+                <li>Uma lista <code>&lt;ul&gt;</code> com 3 coisas que queres aprender neste curso.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2><span class="step-number">4</span> Testar com Live Server</h2>
+    <p>Não abras o ficheiro clicando duas vezes! Vamos usar o servidor.</p>
+    <ol>
+        <li>Clica com o botão direito no ficheiro <code>index.html</code> dentro do VS Code.</li>
+        <li>Seleciona a opção <strong>"Open with Live Server"</strong>.</li>
+        <li>O teu browser deve abrir automaticamente com a tua página.</li>
+        <li><strong>Teste Mágico:</strong> Mantém o browser e o VS Code lado a lado. Muda o texto do <code>&lt;h1&gt;</code> e grava (Ctrl+S). Vê se o browser atualiza sozinho!</li>
+    </ol>
+
+    <div class="note">
+        <strong>Dica Pro:</strong> Se não vires a opção "Open with Live Server", verifica se instalaste a extensão na aba de extensões (ícone dos quadrados na esquerda).
+    </div>
+
+    <div class="checklist">
+        <h3>✅ Checklist de Entrega</h3>
+        <label><input type="checkbox"> Tenho a pasta <code>Portfolio</code> criada.</label>
+        <label><input type="checkbox"> Tenho o ficheiro <code>index.html</code> criado.</label>
+        <label><input type="checkbox"> O site tem o meu nome num H1.</label>
+        <label><input type="checkbox"> O site tem uma lista de objetivos.</label>
+        <label><input type="checkbox"> Consigo abrir o site com o Live Server.</label>
+    </div>
+
+</body>
+</html>
